@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: 1234567
+    url: jdbc:mysql://8.130.119.35:3306/warmup?useSSL=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+server:
+  port: 8080
